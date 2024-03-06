@@ -24,3 +24,5 @@ sudo modprobe vboxguest vboxsf vboxvideo virtualbox-guest uinput
 sudo usermod "$USER" -aG vboxsf
 sudo timedatectl set-ntp true
 sudo systemctl enable avahi-daemon.service
+
+sudo flatpak install --system --assumeyes spotify onlyoffice kdenlive

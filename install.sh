@@ -18,7 +18,6 @@ sudo systemctl enable ufw
 sudo systemctl enable sddm
 sudo systemctl enable bluetooth.service
 sudo systemctl set-default graphical.target
-sudo usermod "$USER" -aG vboxsf
 sudo timedatectl set-ntp true
 sudo systemctl enable avahi-daemon.service
 

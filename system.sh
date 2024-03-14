@@ -2,7 +2,7 @@
 
 set -e
 
-pacstrap /mnt man zsh zsh-completions grml-zsh-config grub efibootmgr amd-ucode base base-devel linux linux-headers linux-lts linux-lts-headers networkmanager wget nano git curl zram-generator reflector smbclient linux-firmware linux-firmware-whence btrfs-progs xfsprogs lvm2
+pacstrap /mnt man zsh zsh-completions grml-zsh-config ntfs-3g gdisk fdisk cfdisk grub efibootmgr amd-ucode base base-devel linux linux-headers linux-lts linux-lts-headers networkmanager wget nano git curl zram-generator reflector smbclient linux-firmware linux-firmware-whence btrfs-progs xfsprogs lvm2
 pacstrap /mnt kernel-modules-hook
 arch-chroot /mnt "pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com;pacman-key --lsign-key 3056513887B78AEB;pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm;pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm"
 

@@ -19,7 +19,7 @@ cat <<-EOF > /mnt/etc/locale.conf
 	LC_TIME=en_GB.UTF-8
 EOF
 
-cat /etc/pacman.conf >> /mnt/etc/pacman.conf
+cat /etc/pacman.conf > /mnt/etc/pacman.conf
 cat <<-EOF > /mnt/etc/systemd/zram-generator.conf
 	[zram0]
 	zram-size = ram / 2

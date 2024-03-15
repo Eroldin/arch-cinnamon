@@ -17,6 +17,7 @@ sudo sed -i 's/CursorTheme=/CursorTheme=breeze_cursors/' /etc/sddm.conf
 sudo sed -i 's/Numlock=none/Numlock=on/' /etc/sddm.conf
 sudo systemctl enable --now watchdog
 sudo systemctl enable ufw
+sudo ufw enable
 sudo systemctl enable sddm
 sudo systemctl enable bluetooth.service
 sudo systemctl set-default graphical.target

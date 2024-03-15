@@ -31,3 +31,5 @@ cat <<-EOF >> /mnt/etc/pacman.conf
 	[chaotic-aur]
 	Include = /etc/pacman.d/chaotic-mirrorlist
 EOF
+
+arch-chroot /mnt zsh -c "pacman -Sy --needed --noconfirm yay"

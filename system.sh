@@ -32,4 +32,4 @@ cat <<-EOF >> /mnt/etc/pacman.conf
 	Include = /etc/pacman.d/chaotic-mirrorlist
 EOF
 
-arch-chroot /mnt zsh -c "pacman -Sy --needed --noconfirm yay"
+arch-chroot /mnt zsh -c "pacman -Sy --needed --noconfirm upd72020x-fw yay"

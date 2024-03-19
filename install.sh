@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -e
 
-mkdir -p ~./config/autostart
+mkdir -p ~/.config/autostart
 
 yay -S bc rsync mlocate bash-completion pkgstats zip unzip unrar p7zip lzop cpio avahi nss-mdns alsa-utils alsa-plugins dosfstools exfat-utils f2fs-tools fuse fuse-exfat mtpfs xorg-server xorg-apps xorg-xinit xorg-xkill xorg-xinput xf86-input-libinput mesa weston xorg-server-xwayland --needed --noconfirm
 yay -S --asdeps --needed --noconfirm cairo fontconfig freetype2

@@ -10,7 +10,7 @@ cat <<-EOF >> /mnt/etc/pacman.conf
 	[chaotic-aur]
 	Include = /etc/pacman.d/chaotic-mirrorlist
 EOF
-arch-chroot /mnt zsh -c "pacman -Sy --needed --noconfirm upd72020x-fw yay exfat-utils-nofuse cryptodev-linux-dkms"
+arch-chroot /mnt zsh -c "pacman -Sy --needed --noconfirm upd72020x-fw yay"
 
 cat <<-EOF > /mnt/etc/locale.conf
 	LANG=en_US.UTF-8

@@ -35,7 +35,7 @@ sudo bash -c 'cat > /opt/videowallpaper.sh' <<-EOF
 	#!/bin/bash
 	video-wallpaper.sh --start /usr/share/backgrounds/mylivewallpapers.com-Night-Elf-Warcraft-3-Reforged.mp4 >/dev/null 2>&1 & disown %1
 EOF
-chmod 755 /opt/videowallpaper.sh
+sudo chmod 755 /opt/videowallpaper.sh
 cat <<-EOF > ~/.config/autostart/livewallpaper.desktop
 	[Desktop Entry]
 	Type=Application

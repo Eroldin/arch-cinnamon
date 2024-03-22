@@ -3,7 +3,7 @@
 set -e
 
 # The mirrorlist for those living in the Netherlands. Change if needed.
-cat <<-EOF > /etc/pacman.d/mirrorlist
+cat <<-'EOF' > /etc/pacman.d/mirrorlist
 	Server = https://mirror.erickochen.nl/archlinux/$repo/os/$arch
 	Server = https://mirror.nekos.host/$repo/os/$arch
 	Server = https://arch.kurdy.org/$repo/os/$arch

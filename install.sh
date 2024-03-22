@@ -46,4 +46,4 @@ cat <<-EOF > ~/.config/autostart/livewallpaper.desktop
 	X-GNOME-Autostart-Delay=0
 EOF
 
-sudo flatpak install --system --assumeyes spotify onlyoffice kdenlive
+flatpak install --system --assumeyes spotify onlyoffice kdenlive

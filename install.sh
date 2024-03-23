@@ -29,6 +29,8 @@ sudo timedatectl set-ntp true
 sudo systemctl enable avahi-daemon.service
 
 sudo snapper -c root create-config /
+sudo chown :users /.snapshots
+sudo chmod a+x /.snapshots
 sudo wget -q -O /usr/share/backgrounds/mylivewallpapers.com-Night-Elf-Warcraft-3-Reforged.mp4 "https://mylivewallpapers.com/?ddownload=18246"
 sudo chmod 644 /usr/share/backgrounds/mylivewallpapers.com-Night-Elf-Warcraft-3-Reforged.mp4
 sudo bash -c 'cat >> /etc/nanorc' <<-EOF
